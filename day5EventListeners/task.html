@@ -15,28 +15,7 @@
     <button id="eye"><i id="eyeicon" class="fa-solid fa-eye"></i></button>
 
 
-    <script>
-
-        let inputbox=document.querySelector("#passwordInput");
-        let eyeButton=document.querySelector("#eye");
-        let eyeicon=document.querySelector("#eyeicon");
-
-        eyeButton.addEventListener("click",()=>{
-
-            if(inputbox.type=="password"){
-                inputbox.type="text";
-                // eyeButton.innerText="Hide";
-                eyeicon.className="fa-solid fa-eye-slash";
-            }else if(inputbox.type=="text"){
-                inputbox.type="password";
-                eyeicon.className="fa-solid fa-eye";
-            }
-            
-        })
-
-
-
-    </script>
+   <script src="task.js"></script>
     
 </body>
 </html>
