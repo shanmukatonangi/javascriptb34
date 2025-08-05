@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Event Listeners and Form Validations</h1>
+
+
+    <!-- <button onclick="ButtonClick()">Click me</button> -->
+
+    <div id="eventlisterner">event listeners</div>
+
+
+    <script>
+
+        function ButtonClick(){
+            console.log("Button clicked");
+        }
+
+      let shanmukh=  document.querySelector("#eventlisterner")
+
+      console.log(shanmukh)
+
+      shanmukh.addEventListener("click",function(){
+          ButtonClick();
+      });
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
