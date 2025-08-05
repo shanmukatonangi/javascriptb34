@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+
+    <input type="text" id="todoInput" placeholder="Add a new todo">
+    <select id="priorityselect">
+        <option value="high">High</option>
+        <option value="low">Low</option>
+    </select>
+    <button id="addTodoButton" onclick="Addtodo()">Add Todo</button>
+
+    <div id="taskcontainer">
+       
+    </div>
+
+
+
+    <script>
+
+        function Addtodo(){
+
+            let taskinput=document.querySelector("#todoInput").value;
+            let priorityselect=document.querySelector("#priorityselect").value;
+            //console.log(taskinput,priorityselect);
+
+            let taskinfo=document.createElement("div"); 
+
+            taskinfo.className="taskinfo";
+
+            taskinfo.innerText=taskinput+" - "+priorityselect;
+
+            document.querySelector("#taskcontainer").appendChild(taskinfo)
+
+            // <div class="taskcontainer"> 
+            // <div class="taskinfo">watch movie - high</div>
+            // </div>
+
+
+
+            if(taskinput=="")
+            {
+                alert("Please enter a task");
+                
+            }
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>
